@@ -277,4 +277,284 @@ body[data-aos-duration="400"] [data-aos] {
 
 .bg-foter {
     background-color: #ff2020;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: n;
+
+}
+
+.container {
+    overflow: hidden !important;
+}
+
+.custom-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+    width: 25% !important;
+    height: 80px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.859);
+    transition: left 0.7s ease;
+    z-index: 0;
+
+}
+
+.custom-btn:hover::after {
+    left: 0;
+
+}
+
+.custom-btn:hover .btn-text {
+    color: white;
+
+}
+
+.btn-text {
+    position: relative;
+    z-index: 1;
+}
+
+[data-aos][data-aos][data-aos-duration="400"],
+body[data-aos-duration="400"] [data-aos] {
+    transition-duration: 1.4s;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        /* Zoom in */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Zoom out */
+    }
+}
+
+.heartbeat {
+    animation: heartbeat 6s infinite alternate ease-in-out;
+    /* مدة أطول وتأثير سلس */
+}
+
+/* start nav */
+.navbar {
+    box-shadow: -5px 1px 2px 0px red;
+    position: fixed;
+    width: 100%;
+    z-index: 153;
+    background-color: rgb(245, 250, 255);
+}
+
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    background-color: #ff2020;
+}
+
+.navbar .navbar-nav .nav-link.active:hover {
+    color: #fff;
+    background-color: #ff2020ef;
+}
+
+/* end nae */
+/* start main sec */
+.main-sec {
+    background-color: #f0f0f2;
+    overflow: hidden;
+
+}
+
+.text-main {
+    margin-top: 30%;
+}
+
+.text-main h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 30px;
+}
+
+.text-main p {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.8;
+    color: #212025;
+}
+
+
+/* end main sec */
+/* New-Arrivals */
+.New-Arrivals {
+    overflow: hidden;
+}
+
+.box {
+    width: fit-content;
+}
+
+.main-tit {
+    margin: 50px 0 150px 0;
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.text h1 {
+    color: black;
+    text-align: center;
+    color: #444444;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+
+.text span {
+    font-size: 25px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    color: #ff2020;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* end new arrive */
+
+
+
+.galary {
+
+    overflow: hidden;
+    margin-top: 15%;
+}
+
+
+
+/* startPopular Items */
+.position-relative {
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.position-relative:hover .overlay {
+    opacity: 1;
+}
+
+.icon-position {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: black;
+}
+
+.button-position {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: 15%;
+}
+
+/* end Popular Items */
+.last-sec {
+    margin-top: 10%;
+}
+
+.text-last h2 {
+    color: #000;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 40px
+}
+
+.text-last p {
+    margin-bottom: 50px;
+    font-size: 17px;
+    text-align: start;
+}
+
+/* footer */
+.text-mern {
+    color: rgb(218, 218, 218);
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+    transition: transform .6s ease;
+}
+
+.icon:hover {
+    transform: translatey(-25px);
+}
+
+.text-foot {
+    color: rgb(125, 125, 125);
+}
+
+.text-foot:hover {
+    color: #ff2020;
+    cursor: pointer;
+}
+
+.shesh {
+    color: #ff2020;
+}
+
+.bg-foter {
+    background-color: #ff2020;
+
 }
